@@ -1633,9 +1633,25 @@ function init() {
 }
 document.addEventListener("DOMContentLoaded", init);
 </script>
+
+<div style="max-width:820px;margin:26px auto;padding:6px 18px 10px;line-height:1.7;font-family:system-ui,sans-serif">
+<h2>What is Loona Edits?</h2>
+<p>Loona Edits is a free online video editor that runs entirely in your browser. Your videos are never uploaded to a server: you add clips, edit them on the timeline, and export one finished video file &mdash; with no watermark and no sign-up.</p>
+<h3>How it works in 3 steps</h3>
+<ol>
+<li><strong>Add your media.</strong> Drop in videos or photos, pick a canvas size &mdash; 9:16 Vertical, 16:9 Wide, 1:1 Square or 4:5 Portrait &mdash; and arrange the timeline.</li>
+<li><strong>Edit.</strong> Trim and split clips, add titles and burned-in captions (or import an .SRT file), layer music and voice tracks with fades, apply filters and transitions, and add your logo watermark and name strip.</li>
+<li><strong>Export.</strong> One tap renders titles, captions, logo and music into a single video file, rendered on your device: MP4 where your browser supports it, otherwise WebM.</li>
+</ol>
+<h3>Example uses</h3>
+<p>A teacher turns phone clips into a captioned lesson video for students. A small business cuts a vertical product Reel with its own logo. A creator adds an intro card, captions and music to a Short &mdash; all without uploading footage anywhere or paying to remove a watermark.</p>
+<h3>Honest limits</h3>
+<p>Because rendering happens on your device, long or high-resolution projects can be slow on older phones, saved projects live only in this browser, and export needs a browser that supports it &mdash; Chrome works best. Details are on the <a href="faq.html">Loona Edits FAQ page</a> and the <a href="about.html">About page</a>.</p>
+</div>
+
 <div id="loona-legal-bar" style="background:#062e2a;color:#f3e9c8;text-align:center;padding:14px 12px;font:14px/1.6 system-ui,sans-serif;border-top:3px solid #d4af37;margin-top:24px">
 © 2026 Loona Automation · Contact: <a href="mailto:loonaautomation@gmail.com" style="color:#ffd95e">loonaautomation@gmail.com</a><br>
-<a href="index.html" style="color:#ffd95e;margin:0 8px">Home</a>·<a href="about.html" style="color:#ffd95e;margin:0 8px">About</a>·<a href="contact.html" style="color:#ffd95e;margin:0 8px">Contact</a>·<a href="privacy-policy.html" style="color:#ffd95e;margin:0 8px">Privacy Policy</a>
+<a href="index.html" style="color:#ffd95e;margin:0 8px">Home</a>·<a href="about.html" style="color:#ffd95e;margin:0 8px">About</a>·<a href="contact.html" style="color:#ffd95e;margin:0 8px">Contact</a>·<a href="privacy-policy.html" style="color:#ffd95e;margin:0 8px">Privacy Policy</a>·<a href="faq.html" style="color:#ffd95e;margin:0 8px">FAQ</a>
 </div>
 <script>/*loona-pwa*/(function(){if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){});});}var D=null;function S(){return window.matchMedia('(display-mode: standalone)').matches||window.navigator.standalone===true;}function B(m){if(S()||document.getElementById('loona-install-btn'))return;var b=document.createElement('button');b.id='loona-install-btn';b.type='button';b.textContent=String.fromCodePoint(0x1F4F2)+' Install App';b.setAttribute('style','position:fixed;right:16px;bottom:16px;z-index:2147483000;background:#062e2a;color:#fff;border:1px solid #c9a227;border-radius:999px;padding:11px 18px;font:600 14px/1.2 system-ui,-apple-system,sans-serif;box-shadow:0 6px 18px rgba(0,0,0,.35);cursor:pointer');b.addEventListener('click',function(){if(m==='p'&&D){D.prompt();D.userChoice.then(function(){D=null;b.remove();});}else{alert('Install this app: tap the Share button, then choose "Add to Home Screen".');}});document.body.appendChild(b);}window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();D=e;B('p');});window.addEventListener('appinstalled',function(){var b=document.getElementById('loona-install-btn');if(b)b.remove();});if(/iphone|ipad|ipod/i.test(navigator.userAgent)&&!S()){window.addEventListener('load',function(){B('i');});}})();</script>
 </body>
